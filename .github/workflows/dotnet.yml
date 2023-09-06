@@ -26,12 +26,4 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Publish
-      run: dotnet publish TodoApi/Program.cs -c Release -o website
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.3.1
-      with:
-        name: website
-        path: TodoApi/Program.cs/**
-        if-no-files-found: error
   
