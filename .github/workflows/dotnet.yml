@@ -32,6 +32,6 @@ jobs:
       uses: actions/upload-artifact@v2.3.1
       with:
         name: website
-        path: SimpleFeedReader/website/**
+        path: TodoApi/Program.cs/**
         if-no-files-found: error
   
